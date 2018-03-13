@@ -1,0 +1,234 @@
+/* custom */
+
+body {
+	width:100%;
+}
+
+body::-webkit-scrollbar {
+	width: 0 !important;
+}
+
+.main {
+	margin-bottom: 350px;
+	overflow: hidden;
+}
+
+/* front */
+.front {
+	width: auto;
+	height: 100vh;
+	background: url(../pic/header.jpg) center center;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn-know {
+	height: 100px;
+}
+
+.clickMe {
+	/* background-color: rgba(255, 0, 119, 0.425); */
+	border-radius: 50px;
+	font-size: 4rem;
+	padding: 5px 15px;
+	color: rgba(202, 44, 216, 0.8);
+}
+
+@media (min-width: 601px) {
+	.front {
+		background-size: cover;
+	}
+}
+
+@media (max-width: 600px) {
+	.front {
+		background-size: contain;
+	}
+}
+
+h1 {
+	font-family: 'Agency FB', arial;
+	color: white;
+	font-size: 10rem;
+	margin-bottom: 100px;
+}
+
+/* navbar */
+.navbar {
+	background-color: rgba(128, 128, 128, 0.300);
+}
+
+/* 3D page */
+.page3D {
+	margin-top: 70px;
+}
+
+.pageHK > .tps-wrapper {
+	background: url(../pic/HK.jpg) center center;
+}
+
+.pagePaper > .tps-wrapper {
+	background: url(../pic/paper.jpg) center center;
+}
+
+.pageTravel > .tps-wrapper {
+	background: url(../pic/garden.jpg) center center;
+}
+
+.last-page {
+	height: 650px;
+}
+
+.page_setting > .tps-wrapper {
+	background-size: cover;
+	margin-bottom: 10px;
+}
+
+.page_container {
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+}
+
+.page_container_carol {
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: center;
+	text-align: center;
+}
+
+h2 {
+	background-color: rgba(128, 128, 128, 0.300);
+	color: white;
+	margin: 0 15%;
+	/* font-family: 'Berkshire Swash', cursive; */
+	font-family: 'Tangerine', cursive;
+	font-weight: 900;
+	font-size: 3.5rem;
+}
+
+/* carousel */
+.carol_des {
+	background-color: rgba(128, 128, 128, 0.300);
+	font-family: 'Tangerine', cursive;
+	font-weight: 700;
+	font-size: 2.5rem;
+}
+
+/* foot */
+.foot {
+    background-color: rgb(34, 34, 34);
+}
+
+.foot img {
+    max-width: 100%;
+}
+
+.foot > div {
+    position: relative;
+}
+
+.foot .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+	transition: opacity 0.5s;
+	text-align: center;
+}
+
+.overlay h4 {
+	font-size: 2rem;
+}
+.overlay p {
+	font-size: 1rem;
+}
+
+.overlay1 {
+	background: rgba(62, 211, 136, 0.5);
+}
+
+.overlay2 {
+	background: rgba(64, 146, 240, 0.5);
+}
+
+.overlay3 {
+	background: rgba(241, 147, 58, 0.5);
+}
+
+.overlay4 {
+	background: rgba(202, 44, 216, 0.5);
+}
+
+.foot .overlay:hover {
+    opacity: 1;
+}
+
+/* contact */
+.contact {
+	color: white;	
+	width: 99vw;
+	min-height: 40vh;
+	padding: 5% 0;
+	text-align: center;
+}
+
+.contact_box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact > h3 {
+	text-align: center;
+	font-size: 2rem;
+	height: 4vh;
+	padding-bottom: 0;
+}
+
+.contact div a {
+	text-align: center;
+	width: 100%;
+	height: 60%;
+	padding-bottom: 10px;
+}
+
+.contact div div {
+	text-align: center;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+}
+
+.contact a {
+	text-align: center;
+    color: rgb(240, 95, 64);
+}
+
+/* hide */
+.hide {
+	display: none;
+}
+
+/* footer */
+footer {
+	text-align: center;
+	height: 5vh;
+}

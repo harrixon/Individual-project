@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<meta charset="utf-8">
+        <title>HARRISON CHAN</title>
+    </head>
+
+    <body data-spy="scroll" data-target="#navbarTogglerDemo01" data-offset="0">
+        <!-- nav bar -->
+        <nav class="hide navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" 
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#album">ALBUM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#timeline">TIMELINE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">CALL ME</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- front page -->
+        <!-- <div class="row"> -->
+            <div class="front init">
+                <div><h1 class="log1">HI, I'm HARRISON</h1></div>
+                <div class="btn-know"><a class="hide clickMe" href="#"><i class="fas fa-crosshairs"></i></a></div>
+            </div>
+        <!-- </div> -->
+        <!-- 3D -->
+        <div id="about" class="page3D row no-gutters hide">
+            <div class="col-sm-2 empty"></div>
+            <div class="col-sm-8">
+                <div class="main">
+                    <!-- HKU paper -->
+                    <section class="pagePaper page_setting">
+                        <!-- tiltedpageJS add <div class="tps-wrapper"> here, style&bg with class -->
+                        <div class="page_container">
+                            <h2 class="p1">I graduated from engineering and had my final year paper published</h2>
+                        </div>
+                    </section>
+                    <!-- Myself Part -->
+                    <section class="pageHK page_setting">
+                        <div class="page_container">
+                            <h2 class="p1">Now I'm a developer based in Hong Kong</h2>
+                        </div>
+                    </section>
+                    <!-- Travel Part plugin carousel here-->
+                    <section id="album" class="pageTravel page_setting">
+                        <div class="page_container">
+                            <h2 class="p1">I Like Taking Photos With My Phone When Traveling</h2>
+                        </div>
+                    </section>
+                    <!-- carousel -->
+                    <section class="pageCarol page_setting">
+                        <div class="page_container_carol">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="pic/gate.jpg" alt="First slide">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5 class="carol_des">London</h5>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="pic/kinkakuji.jpg" alt="Second slide">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5 class="carol_des">Kyoto</h5>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="pic/chateau.jpg" alt="Third slide">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5 class="carol_des">Versailles</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Time line -->
+                    <section id="timeline" class="last-page page_setting">
+                        <div class="page_container">
+                            <div class="timeline"></div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="col-sm-2 empty"></div>
+        </div>
+        <!-- contact -->
+        <div id="contact" class="foot row no-gutters hide">
+            <div class="col-sm-6 col-xl-3">
+                <img src="pic/game.jpg" class="img-fluid">
+                <div class="overlay overlay1">
+                    <h4>AOE2, always FUN to play</h4>
+                    <p>so is FIFA</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+                <img src="pic/11.jpg" class="img-fluid">
+                <div class="overlay overlay2">
+                    <h4>WONDERFUL TV show,<br>can't wait for next season</h4>
+                    <p>Go watch it on Netflix</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+                <img src="pic/wellington.jpg" class="img-fluid">
+                <div class="overlay overlay3">
+                    <h4>Love gourmet</h4>
+                    <p>Definitely not vegetarian</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xl-3">
+                <img src="pic/xxx.jpg" class="img-fluid">
+                <div class="overlay  overlay4">
+                    <h4>Manga</h4>
+                    <p>Beyond imagination</p>
+                </div>
+            </div>
+            <div class="col-12 contact_box">
+                <div class="contact row no-gutters">
+                    <h3 class="col-12">Hey if you wanna get in touch,<br><br><br>here's how you can reach me</h3>
+                    <div class="col-4 row no-gutters">
+                        <a class="" href="https://www.facebook.com/harrison.chan.167">
+                            <i class="fab fa-facebook-f fa-3x"></i>
+                        </a>
+                    </div>
+                    <div class="col-4 row no-gutters">
+                        <a class="" href="mailto:harrisonchan1991@hotmail.com">
+                            <i class="far fa-envelope fa-3x"></i>
+                        </a>
+                    </div>
+                    <div class="col-4 row no-gutters">
+                        <a class="" href="http://store.steampowered.com/">
+                            <i class="fab fa-steam-symbol fa-3x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="hide">
+            <p>&copy; 2018 by HARRISON CHAN</p>
+        </footer>
+	</body>	
+
+    <!-- js , jQuery , bootstrapt , custom CSS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="js/bootstrap.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollintoview/1.8/jquery.scrollintoview.min.js"></script>
+        
+    <link href="css/custom.css" rel="stylesheet">
+    <!-- ===================================== -->
+    
+    <!-- ========== fonts ========== -->
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Tangerine:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="http://allfont.net/allfont.css?fonts=agency-fb" rel="stylesheet" type="text/css">
+    <script defer src="js/fontawesome-all.js"></script>
+    <!-- =========================== -->
+
+	<!-- Tilted Page Script, CSS, call script -->
+	<script type="text/javascript" src="js/jquery.tiltedpage-scroll.js"></script>
+	<link href='css/tiltedpage-scroll.css' rel='stylesheet'>
+	<script>
+		$(document).ready(function () {
+			$(".main").tiltedpage_scroll({
+				sectionContainer: "> section",     // In case you don't want to use <section> tag, you can define your won CSS selector here
+				angle: 50,                         // You can define the angle of the tilted section here. Change this to false if you want to disable the tilted effect. The default value is 50 degrees.
+				opacity: true,                     // You can toggle the opacity effect with this option. The default value is true
+				scale: true,                       // You can toggle the scaling effect here as well. The default value is true.
+				outAnimation: true                 // In case you do not want the out animation, you can toggle this to false. The defaul value is true.
+			});
+		});
+	</script>
+    <!-- ==================================== -->
+    
+    <!-- Hide content until click -->
+    <script>
+        $(document).ready(function () {
+            // show crosshair
+            $(".init").on("click", function(){
+                $(".clickMe").removeClass("hide");
+            });       
+            // show all hidden item , call timeline
+            $(".clickMe").on("click", function(){               
+                $(".hide").removeClass("hide");
+                // plugin
+                $("#about").scrollintoview();
+                $(".timeline").after("<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1c0Rd6mo1XzySrUvOifFUXJWWhSHGCr1PkDxvayqye5w&amp;font=Default&amp;lang=en&amp;initial_zoom=5&amp;height=500' width='100%' height='500' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>");
+            });
+            // experimental: scroll on click
+            $("h2").on("click", function(){
+                // e' offset - vh/2
+                let off = $(this).parents(".page_setting").offset().top + $(window).innerHeight() / 1.5;
+                $("html").animate({ scrollTop: off });
+            });
+            // scroll on click
+            $("img.d-block.w-100").on("click", function(){
+                let off = $(this).offset().top + $(window).height()/1.4;
+                $("html").animate({ scrollTop: off });
+            });
+            // show/hide navbar on scroll
+            $(document).on("scroll", function(){
+                if ($("html").scrollTop() >= $(window).innerHeight())
+                {
+                    $(".navbar").removeClass("bg-light");
+                }
+                else if ($("html").scrollTop() < $(window).innerHeight())
+                {
+                    $(".navbar").addClass("bg-light");
+                }
+            });
+        });
+    </script>
+    <!-- ======================== -->
+
+    <!-- nav bar animation -->
+    <script>
+        $(document).ready(function() {
+            $(".navbar-nav > li > a").on("click", function(){
+                $(".navbar-collapse").removeClass("show");
+            });
+        });
+    </script>
+
+    <!-- Citation
+    Tilted page scroll by peachananr : https://github.com/peachananr/tiltedpage_scroll
+
+    Timeline.js by Knightlab : https://timeline.knightlab.com/
+
+    -->
+
+</html>
