@@ -3,6 +3,13 @@
     <head>
     	<meta charset="utf-8">
         <title>HARRISON CHAN</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Tangerine:400,700&amp;subset=latin-ext" rel="stylesheet">
+        <link href="http://allfont.net/allfont.css?fonts=agency-fb" rel="stylesheet" type="text/css">
+        <link href='css/tiltedpage-scroll.css' rel='stylesheet'>
+        <link href="css/custom.css" rel="stylesheet">
     </head>
 
     <body data-spy="scroll" data-target="#navbarTogglerDemo01" data-offset="0">
@@ -166,98 +173,14 @@
         <footer class="hide">
             <p>&copy; 2018 by HARRISON CHAN</p>
         </footer>
-	</body>	
 
-    <!-- js , jQuery , bootstrapt , custom CSS -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-		crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-    <script src="js/bootstrap.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollintoview/1.8/jquery.scrollintoview.min.js"></script>
-        
-    <link href="css/custom.css" rel="stylesheet">
-    <!-- ===================================== -->
-    
-    <!-- ========== fonts ========== -->
-    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Tangerine:400,700&amp;subset=latin-ext" rel="stylesheet">
-    <link href="http://allfont.net/allfont.css?fonts=agency-fb" rel="stylesheet" type="text/css">
-    <script defer src="js/fontawesome-all.js"></script>
-    <!-- =========================== -->
-
-	<!-- Tilted Page Script, CSS, call script -->
-	<script type="text/javascript" src="js/jquery.tiltedpage-scroll.js"></script>
-	<link href='css/tiltedpage-scroll.css' rel='stylesheet'>
-	<script>
-		$(document).ready(function () {
-			$(".main").tiltedpage_scroll({
-				sectionContainer: "> section",     // In case you don't want to use <section> tag, you can define your won CSS selector here
-				angle: 50,                         // You can define the angle of the tilted section here. Change this to false if you want to disable the tilted effect. The default value is 50 degrees.
-				opacity: true,                     // You can toggle the opacity effect with this option. The default value is true
-				scale: true,                       // You can toggle the scaling effect here as well. The default value is true.
-				outAnimation: true                 // In case you do not want the out animation, you can toggle this to false. The defaul value is true.
-			});
-		});
-	</script>
-    <!-- ==================================== -->
-    
-    <!-- Hide content until click -->
-    <script>
-        $(document).ready(function () {
-            // show crosshair
-            $(".init").on("click", function(){
-                $(".clickMe").removeClass("hide");
-            });       
-            // show all hidden item , call timeline
-            $(".clickMe").on("click", function(){               
-                $(".hide").removeClass("hide");
-                // plugin
-                $("#about").scrollintoview();
-                $(".timeline").after("<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1c0Rd6mo1XzySrUvOifFUXJWWhSHGCr1PkDxvayqye5w&amp;font=Default&amp;lang=en&amp;initial_zoom=5&amp;height=500' width='100%' height='500' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>");
-            });
-            // experimental: scroll on click
-            $("h2").on("click", function(){
-                // e' offset - vh/2
-                let off = $(this).parents(".page_setting").offset().top + $(window).innerHeight() / 1.5;
-                $("html").animate({ scrollTop: off });
-            });
-            // scroll on click
-            $("img.d-block.w-100").on("click", function(){
-                let off = $(this).offset().top + $(window).height()/1.4;
-                $("html").animate({ scrollTop: off });
-            });
-            // show/hide navbar on scroll
-            $(document).on("scroll", function(){
-                if ($("html").scrollTop() >= $(window).innerHeight())
-                {
-                    $(".navbar").removeClass("bg-light");
-                }
-                else if ($("html").scrollTop() < $(window).innerHeight())
-                {
-                    $(".navbar").addClass("bg-light");
-                }
-            });
-        });
-    </script>
-    <!-- ======================== -->
-
-    <!-- nav bar animation -->
-    <script>
-        $(document).ready(function() {
-            $(".navbar-nav > li > a").on("click", function(){
-                $(".navbar-collapse").removeClass("show");
-            });
-        });
-    </script>
-
-    <!-- Citation
-    Tilted page scroll by peachananr : https://github.com/peachananr/tiltedpage_scroll
-
-    Timeline.js by Knightlab : https://timeline.knightlab.com/
-
-    -->
-
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollintoview/1.8/jquery.scrollintoview.min.js"></script>
+        <script defer src="js/fontawesome-all.js"></script>
+        <script type="text/javascript" src="js/jquery.tiltedpage-scroll.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+    </body>	
 </html>
