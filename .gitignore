@@ -4,3 +4,5 @@
 ./public/generic.html
 ./public/landing.html
 ./public/images/banner-chalkBoard.xcf
+
+/node_modules
