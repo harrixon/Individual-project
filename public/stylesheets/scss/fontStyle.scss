@@ -1,0 +1,84 @@
+$thin: 100;
+$extraLight: 200;
+$light: 300;
+$normal: 400;
+$medium: 500;
+$semiBold: 600;
+$bold: 700;
+$extraBold: 800;
+$black: 900;
+
+/*
+ *
+ * @font-face mixin
+ * https://gist.github.com/jonathantneal/d0460e5c2d5d7f9bc5e6
+ *
+ */
+
+// =============================================================================
+// String Replace
+// =============================================================================
+
+@function str-replace($string, $search, $replace: "") {
+    $index: str-index($string, $search);
+
+    @if $index {
+        @return str-slice($string, 1, $index - 1)+$replace+str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+    }
+
+    @return $string;
+}
+
+// =============================================================================
+// Font Face
+// =============================================================================
+
+// @mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: otf) {
+    $src: null;
+
+    $extmods: (eot: "?",
+            svg: "#"+ str-replace($name, " ", "_"));
+
+    $formats: (otf: "opentype",
+            ttf: "truetype"
+        );
+
+    @each $ext in $exts {
+        $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+        $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+        $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+    }
+
+    @font-face {
+        font-family: quote($name);
+        font-style: $style;
+        font-weight: $weight;
+        src: $src;
+    }
+}
+
+// =============================================================================
+// Futura PT
+// =============================================================================
+
+@include font-face("Futura PT", './fonts/Futura_PT/FuturaPTLight', $light, normal);
+@include font-face("Futura PT", './fonts/Futura_PT/FuturaPTLightOblique', $light, italic);
+
+@include font-face("Futura PT", './fonts/Futura_PT/FuturaPTBook', $normal, normal);
+@include font-face("Futura PT", './fonts/Futura_PT/FuturaPTBookOblique', $normal, italic);
+
+@include font-face("Futura PT", './fonts/Futura_PT/FuturaPTMedium', $medium, normal);
+@include font-face("Futura PT", './fonts/Futura_PT/FuturaPTMediumOblique', $medium, italic);
+
+@include font-face("Futura PT", './fonts/Futura_PT/FuturaPTDemi', $semiBold, normal);
+@include font-face("Futura PT", './fonts/Futura_PT/FuturaPTDemiOblique', $semiBold, italic);
+
+@include font-face("Futura PT", './fonts/Futura_PT/FuturaPTHeavy', $bold, normal);
+@include font-face("Futura PT", './fonts/Futura_PT/FuturaPTHeavyOblique', $bold, italic);
+
+@include font-face("Futura PT", './fonts/Futura_PT/FuturaPTBold', $extraBold, normal);
+@include font-face("Futura PT", './fonts/Futura_PT/FuturaPTBoldOblique', $extraBold, italic);
+
+@include font-face("Futura PT", './fonts/Futura_PT/FuturaPTExtraBold', $black, normal);
+@include font-face("Futura PT", './fonts/Futura_PT/FuturaPTExtraBoldOblique', $black, italic);

@@ -1,0 +1,7 @@
+[
+    {
+        "url": "/",
+        "priority": 1,
+        "lastmodfile": "views/index.hbs"
+    }
+]
