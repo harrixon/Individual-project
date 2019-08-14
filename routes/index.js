@@ -1,18 +1,24 @@
 const express = require('express');
 const router = express.Router();
+const projectData = require('../data/projects/project_list.json');
 // const metaTag = require('../data/metaTag/en_US.json');
-// const axios = require('axios');
-
 
 // main content
 router.get('/', function (req, res, next) {
 	res.render('index', {
-		mainPage: {
-			homepage: true
-		},
-		subPage: "homepage",
+		page: 'landing',
+		projectData: projectData,
 		// meta: metaTag.homepage,
-		// lang: toShortLocale[req.locale],
+	});
+});
+
+projectData.forEach(project => {
+	const projectURL = "/project/" + project.link;
+	router.get(projectURL, function (req, res, next) {
+		res.render('index', {
+			page: 'project',
+			projectData: project,
+		});
 	});
 });
 

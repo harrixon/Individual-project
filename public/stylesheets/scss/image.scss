@@ -1,0 +1,84 @@
+/*
+ *
+ * Image size specification
+ *
+ * This library will provide 4 classes according to dimensions set by BE
+ * when it corp and store images.
+ *
+ * For now these classes are only valid for mobile ver.
+ *
+ * 1. L (full-width) 16:9 360x203
+ *
+ * 2. L 16:9 328x187
+ *
+ * 3. M 16:9 144x108
+ *
+ * 4. S 16:9 68x68
+ *
+ */
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+// 16:9
+// POI / no padding
+@mixin image-fw {
+    width: 360px;
+    height: 203px;
+}
+
+.image-l-fw {
+    @include image-fw;
+}
+
+// 16:9
+// homepage / trending now / with padding
+@mixin image-l {
+    width: 328px;
+    height: 187px;
+}
+
+.image-l {
+    @include image-l;
+}
+
+// 16:9
+// ticketing card image
+@mixin image-m-wide {
+    width: 160px;
+    height: 90px;
+}
+
+.image-s {
+    @include image-m-wide;
+}
+
+// 4:3
+// card image
+@mixin image-m {
+    width: 144px;
+    height: 108px;
+}
+
+.image-s {
+    @include image-m;
+}
+
+// 1:1
+// mainly list image
+@mixin image-s {
+    width: 68px;
+    height: 68px;
+}
+
+.image-s {
+    @include image-s;
+}
+
+.image-rounded {
+    border-radius: 4px;
+}

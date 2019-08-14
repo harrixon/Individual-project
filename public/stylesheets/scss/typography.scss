@@ -1,0 +1,212 @@
+// mixins
+$headline-size-l: 48px;
+$headline-size-m: 32px;
+$headline-size-s: 20px;
+
+@mixin headline {
+    font-family: "Futura PT";
+    font-weight: $semiBold;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+
+    font-size: $headline-size-l;
+    line-height: $headline-size-l;
+
+    @media screen and (max-width: 1032px) {
+        font-size: $headline-size-m;
+        line-height: $headline-size-m;
+    }
+
+    @media screen and (max-width: 767px) {
+        font-size: $headline-size-s;
+        line-height: $headline-size-s;
+    }
+}
+
+$subtitle1-size-l: 28px;
+$subtitle1-size-m: 20px;
+$subtitle1-size-s: 16px;
+
+@mixin subtitle1 {
+    font-family: "Futura PT";
+    font-weight: $semiBold;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+
+    font-size: $subtitle1-size-l;
+    line-height: $subtitle1-size-l;
+
+    @media screen and (max-width: 1032px) {
+        font-size: $subtitle1-size-m;
+        line-height: $subtitle1-size-m;
+    }
+
+    @media screen and (max-width: 767px) {
+        font-size: $subtitle1-size-s;
+        line-height: $subtitle1-size-s;
+    }
+}
+
+// not tested
+$subtitle2-size-l: 18px;
+$subtitle2-size-m: 18px;
+$subtitle2-size-s: 18px;
+
+@mixin subtitle2 {
+    font-family: "Futura PT";
+    font-weight: $semiBold;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+
+    font-size: $subtitle2-size-l;
+    line-height: $subtitle2-size-l;
+
+    @media screen and (max-width: 1032px) {
+        font-size: $subtitle2-size-m;
+        line-height: $subtitle2-size-m;
+    }
+
+    @media screen and (max-width: 767px) {
+        font-size: $subtitle2-size-s;
+        line-height: $subtitle2-size-s;
+    }
+}
+
+$body1-size-l: 20px;
+$body1-size-m: 14px;
+$body1-size-s: 14px;
+
+@mixin body1 {
+    font-family: "Futura PT";
+    font-weight: $normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+
+    font-size: $body1-size-l;
+    line-height: $body1-size-l;
+
+    @media screen and (max-width: 1032px) {
+        font-size: $body1-size-m;
+        line-height: $body1-size-m;
+    }
+
+    @media screen and (max-width: 767px) {
+        font-size: $body1-size-s;
+        line-height: $body1-size-s;
+    }
+}
+
+// not tested
+$body2-size-l: 14px;
+$body2-size-m: 14px;
+$body2-size-s: 14px;
+
+@mixin body2 {
+    font-family: "Futura PT";
+    font-weight: $medium;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+
+    font-size: $body2-size-l;
+    line-height: $body2-size-l;
+
+    @media screen and (max-width: 1032px) {
+        font-size: $body2-size-m;
+        line-height: $body2-size-m;
+    }
+
+    @media screen and (max-width: 767px) {
+        font-size: $body2-size-s;
+        line-height: $body2-size-s;
+    }
+}
+
+// not tested
+$caption-size-l: 12px;
+$caption-size-m: 12px;
+$caption-size-s: 12px;
+
+@mixin caption {
+    font-family: "Futura PT";
+    font-weight: $medium;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 0.2;
+
+    font-size: $caption-size-l;
+    line-height: $caption-size-l;
+
+    @media screen and (max-width: 1032px) {
+        font-size: $caption-size-m;
+        line-height: $caption-size-m;
+    }
+
+    @media screen and (max-width: 767px) {
+        font-size: $caption-size-s;
+        line-height: $caption-size-s;
+    }
+}
+
+/*
+ *
+ * headers
+ *
+ */
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.5rem;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+h6 {
+    font-size: 1.5rem;
+}
+
+/*
+ *
+ * headlines, titles, bodies
+ *
+ */
+
+.headline {
+    @include headline;
+}
+
+.subtitle1 {
+    @include subtitle1;
+}
+
+.subtitle2 {
+    @include subtitle2;
+}
+
+.body1 {
+    @include body1;
+}
+
+.body2 {
+    @include body2;
+}
+
+.caption {
+    @include caption;
+}

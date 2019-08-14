@@ -39,7 +39,15 @@
 	</header>
 
 	<main>
-		Body
+		{{#render page "landing"}}
+			{{> landing}}
+
+			{{> listing}}
+		{{/render}}
+
+		{{#render page "project"}}
+			{{> project}}
+		{{/render}}
 	</main>
 	
 	<footer>

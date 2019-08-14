@@ -1,0 +1,302 @@
+[
+    {
+        "id": "1",
+        "link": "hiinc",
+        "name": "hi Inc. Company Website",
+        "description": "Corporate B2B Website with 3rd party API integration",
+        "description_long": "bla bla bla",
+        "dev_role": "In charge",
+        "collab": "Designer, Marketing",
+        "preview": [
+            {
+                "id": "1",
+                "file": "project_hiinc_screen_1.png"
+            },
+            {
+                "id": "2",
+                "file": "project_hiinc_screen_2.png"
+            },
+            {
+                "id": "3",
+                "file": "project_hiinc_screen_3.png"
+            }
+        ],
+        "details": [
+            {
+                "key": "Role",
+                "value": "Dev, In charge"
+            },
+            {
+                "key": "Collaboration",
+                "value": "Design, Market, CS team"
+            },
+            {
+                "key": "Link",
+                "value": "https://www.hiinc.com"
+            },
+            {
+                "key": "Role",
+                "value": "Dev, In charge"
+            },
+            {
+                "key": "Collaboration",
+                "value": "Design, Market, CS team"
+            },
+            {
+                "key": "Link",
+                "value": "https://www.hiinc.com"
+            }
+        ],
+        "images": {
+            "major": "project_baseline_screen_major.png",
+            "minor": [
+                "project_baseline_screen_minor_1.png",
+                "project_baseline_screen_minor_2.png"
+            ]
+        }
+    },
+    {
+        "id": "2",
+        "link": "StyleBaseline",
+        "name": "Style Baseline",
+        "description": "CSS style library for internal use",
+        "description_long": "bla bla bla",
+        "dev_role": "In charge",
+        "collab": "UX designer",
+        "preview": [
+            {
+                "id": "1",
+                "file": "project_baseline_screen_1.png"
+            },
+            {
+                "id": "2",
+                "file": "project_baseline_screen_2.png"
+            },
+            {
+                "id": "3",
+                "file": "project_baseline_screen_3.png"
+            },
+            {
+                "id": "4",
+                "file": "project_baseline_screen_4.png"
+            }
+        ],
+        "details": [
+            {
+                "key": "Role",
+                "value": "Dev, In charge"
+            },
+            {
+                "key": "Collaboration",
+                "value": "Design, Market, CS team"
+            },
+            {
+                "key": "Link",
+                "value": "https://www.hiinc.com"
+            }
+        ],
+        "images": {
+            "major": "project_baseline_screen_major.png",
+            "minor": [
+                "project_baseline_screen_minor_1.png",
+                "project_baseline_screen_minor_2.png"
+            ]
+        }
+    },
+    {
+        "id": "3",
+        "link": "OTAPlatform",
+        "name": "Online Travel Agency Platform",
+        "description": "An OTA platform integrated with existing services and databases.",
+        "description_long": "bla bla bla",
+        "dev_role": "Part of dev team",
+        "collab": "UX, UI designers",
+        "preview": [
+            {
+                "id": "1",
+                "file": "project_hidotcom_screen_1.png"
+            },
+            {
+                "id": "2",
+                "file": "project_hidotcom_screen_2.png"
+            },
+            {
+                "id": "3",
+                "file": "project_hidotcom_screen_3.png"
+            }
+        ],
+        "details": [
+            {
+                "key": "Role",
+                "value": "Dev, In charge"
+            },
+            {
+                "key": "Collaboration",
+                "value": "Design, Market, CS team"
+            },
+            {
+                "key": "Link",
+                "value": "https://www.hiinc.com"
+            }
+        ],
+        "images": {
+            "major": "project_baseline_screen_major.png",
+            "minor": [
+                "project_baseline_screen_minor_1.png",
+                "project_baseline_screen_minor_2.png"
+            ]
+        }
+    },
+    {
+        "id": "4",
+        "link": "HotelPortal",
+        "name": "Hotel Portal",
+        "description": "Portal Website for both internal and external usage",
+        "description_long": "bla bla bla",
+        "dev_role": "Part of dev team",
+        "collab": "UI designers",
+        "preview": [
+            {
+                "id": "1",
+                "file": "project_hotelportal_screen_1.png"
+            },
+            {
+                "id": "2",
+                "file": "project_hotelportal_screen_2.png"
+            },
+            {
+                "id": "3",
+                "file": "project_hotelportal_screen_3.png"
+            }
+        ],
+        "details": [
+            {
+                "key": "Role",
+                "value": "Dev, In charge"
+            },
+            {
+                "key": "Collaboration",
+                "value": "Design, Market, CS team"
+            },
+            {
+                "key": "Link",
+                "value": "https://www.hiinc.com"
+            }
+        ],
+        "images": {
+            "major": "project_baseline_screen_major.png",
+            "minor": [
+                "project_baseline_screen_minor_1.png",
+                "project_baseline_screen_minor_2.png"
+            ]
+        }
+    },
+    {
+        "id": "5",
+        "link": "SSOFE",
+        "name": "SSO Login Page",
+        "description": "A single login page for multiple products across different platforms",
+        "description_long": "bla bla bla",
+        "dev_role": "In charge",
+        "collab": "Android team for compatibility",
+        "preview": [
+            {
+                "id": "1",
+                "file": "project_ssofe_screen_1.png"
+            }
+        ],
+        "details": [
+            {
+                "key": "Role",
+                "value": "Dev, In charge"
+            },
+            {
+                "key": "Collaboration",
+                "value": "Design, Market, CS team"
+            },
+            {
+                "key": "Link",
+                "value": "https://www.hiinc.com"
+            }
+        ],
+        "images": {
+            "major": "project_baseline_screen_major.png",
+            "minor": [
+                "project_baseline_screen_minor_1.png",
+                "project_baseline_screen_minor_2.png"
+            ]
+        }
+    },
+    {
+        "id": "6",
+        "link": "DealingRoom",
+        "name": "Dealing Room",
+        "description": "A system for pub management fusing with stock market experience",
+        "description_long": "bla bla bla",
+        "dev_role": "Front end (React)",
+        "collab": "A team of 4",
+        "preview": [
+            {
+                "id": "1",
+                "file": "project_dealingroom_screen_1.png"
+            }
+        ],
+        "details": [
+            {
+                "key": "Role",
+                "value": "Dev, In charge"
+            },
+            {
+                "key": "Collaboration",
+                "value": "Design, Market, CS team"
+            },
+            {
+                "key": "Link",
+                "value": "https://www.hiinc.com"
+            }
+        ],
+        "images": {
+            "major": "project_baseline_screen_major.png",
+            "minor": [
+                "project_baseline_screen_minor_1.png",
+                "project_baseline_screen_minor_2.png"
+            ]
+        }
+    },
+    {
+        "id": "7",
+        "link": "HandyHomePOC",
+        "name": "Handy Home POC",
+        "description": "An experimental landing page for flagship product Handy phone",
+        "description_long": "bla bla bla",
+        "dev_role": "In charge",
+        "collab": "UX designers, AD team, Data team",
+        "preview": [
+            {
+                "id": "1",
+                "file": "project_nhppoc_screen_1.png"
+            }
+        ],
+        "details": [
+            {
+                "key": "Role",
+                "value": "Dev, In charge"
+            },
+            {
+                "key": "Collaboration",
+                "value": "Design, Market, CS team"
+            },
+            {
+                "key": "Link",
+                "value": "https://www.hiinc.com"
+            }
+        ],
+        "images": {
+            "major": "project_baseline_screen_major.png",
+            "minor": [
+                "project_baseline_screen_minor_1.png",
+                "project_baseline_screen_minor_2.png"
+            ]
+        }
+    }
+]

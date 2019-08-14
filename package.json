@@ -30,7 +30,6 @@
     "express-minify": "^1.0.0",
     "hbs": "^4.0.4",
     "hbs-utils": "0.0.4",
-    "livereload": "^0.8.0",
     "lodash": "^4.17.15",
     "morgan": "^1.9.1",
     "node-sass-middleware": "^0.11.0"

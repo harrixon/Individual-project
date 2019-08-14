@@ -1,0 +1,19 @@
+<div class="table">
+    {{#for this}}
+        <div class="row">
+            <div class="key"> {{this.key}} </div>
+            {{#if (ifEquals this.key "Link")}}
+                <a
+                    href="{{this.value}}"
+                    class="value link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Click Me
+                </a>
+            {{else}}
+                <div class="value"> {{this.value}} </div>
+            {{/if}}
+        </div>
+    {{/for}}
+</div>

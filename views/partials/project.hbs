@@ -1,0 +1,52 @@
+{{!-- project details page --}}
+{{!-- 1. a small paragraph about the project, roles etc --}}
+{{!-- 2. major screen shot --}}
+{{!-- 3. minor screen shot --}}
+{{!-- 4. project details section --}}
+
+<section class="project">
+    {{!-- mobile screen shot --}}
+    <div class="m-screen-shots">
+        <img
+            src="/images/{{projectData.images.major}}"
+            alt="project major screenshot"
+            class="major"
+        >
+    </div>
+
+    {{!-- about --}}
+    <div class="about">
+        <h1 class="title"> {{projectData.name}} </h1>
+        {{!-- <h3 class="subtitle"> {{projectData.description}} </h3> --}}
+        <p class="content"> {{projectData.description_long}} </p>
+    </div>
+    <hr />
+
+    {{!-- screen shots --}}
+    <div class="screen-shots">
+        <img
+            src="/images/{{projectData.images.major}}"
+            alt="project major screenshot"
+            class="major"
+        >
+        {{#for projectData.images.minor}}
+            <img
+                src="/images/{{this}}"
+                alt="project minor screenshot"
+                class="minor"
+            >
+        {{/for}}
+    </div>
+    <hr />
+
+    {{!-- details table --}}
+    <div class="details">
+        <div class="wrapper">
+            {{!-- subtitle --}}
+            <h3 class="title">Details</h3>
+            {{!-- details tabel component --}}
+            {{> project_details projectData.details}}
+        </div>
+    </div>
+
+</section>

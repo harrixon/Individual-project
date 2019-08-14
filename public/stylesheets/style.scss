@@ -1,11 +1,34 @@
+// normalize
 @import "scss/normalize";
 
+// variables
 @import "scss/variables";
+
+// mixins
+
+// general
+@import "scss/image";
 
 @import "scss/fontStyle";
 
+@import "scss/typography";
+
 @import "scss/general";
 
-@import "scss/navbar";
+// components
+@import "scss/components/navbar";
 
-@import "scss/footer";
+@import "scss/components/card";
+
+@import "scss/components/footer";
+
+@import "scss/components/pageBreak";
+
+@import "scss/components/project_details";
+
+// pages
+@import "scss/pages/landing";
+
+@import "scss/pages/listing";
+
+@import "scss/pages/project";

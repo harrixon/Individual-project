@@ -4,9 +4,15 @@ const path = require('path');
 
 function HBS() {
 
-    const partialsPath = path.join(__dirname, '../views/partials');
-    hbsutils.registerPartials(partialsPath);
-    hbsutils.registerWatchedPartials(partialsPath);
+    // watch partials in `partial` folder
+    hbsutils.registerPartials(path.join(__dirname, '../views/partials'));
+    hbsutils.registerWatchedPartials(path.join(__dirname, '../views/partials'));
+    // watch partials in `component` folder
+    hbsutils.registerPartials(path.join(__dirname, '../views/partials/components'));
+    hbsutils.registerWatchedPartials(path.join(__dirname, '../views/partials/components'));
+    // watch partials in `pages` folder
+    hbsutils.registerPartials(path.join(__dirname, '../views/partials/pages'));
+    hbsutils.registerWatchedPartials(path.join(__dirname, '../views/partials/pages'));
 
     hbs.registerHelper('ifEquals', function (arg1, arg2) {
         return (arg1 === arg2);
@@ -14,14 +20,17 @@ function HBS() {
     // hbs.registerHelper('ifSelected', function (arg1, arg2) {
     //     return (arg1 === arg2) ? 'selected="selected"' : null;
     // });
-    // hbs.registerHelper('for', function (arg1, block) {
-    //     let accu = "";
-    //     arg1.forEach(e => accu += block.fn(e));
-    //     return accu;
-    // });
-    // hbs.registerHelper('render', function (arg1, arg2, block) {
-    //     return (arg1 === arg2) ? block.fn() : null;
-    // });
+    hbs.registerHelper('for', function (array, block) {
+        let accu = "";
+        array.forEach(e => accu += block.fn(e));
+        return accu;
+    });
+    hbs.registerHelper('inArray', function (array, index, block) {
+        return block.fn(array[parseInt(index)].file);
+    });
+    hbs.registerHelper('render', function (arg1, arg2, block) {
+        return (arg1 === arg2) ? block.fn(this) : null;
+    });
     // hbs.registerHelper('showSubNav', function (arg1, block, args) {
     //     if (arg1.hihotels) { return block.fn(); }
     //     else if (arg1.hidestinations) { return block.fn(); }
@@ -30,6 +39,10 @@ function HBS() {
     // hbs.registerHelper('raw-helper', function (options) {
     //     return options.fn();
     // });
+    hbs.registerHelper('log', function (arg1) {
+        console.log(typeof(arg1));
+        console.log(arg1);
+    });
 }
 
 module.exports = HBS;

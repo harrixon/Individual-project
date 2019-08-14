@@ -16,13 +16,17 @@ body {
     // general settings
     font-family: "Futura PT";
     background-color: white;
-    padding-left: 16px;
-    padding-right: 16px;
+    color: $hi-navy;
+
     // footer always at bottom
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 100%;
+}
+
+main {
+    display: block;
 }
 
 .full-width {
@@ -34,7 +38,7 @@ body {
 
 section {
     width: 100%;
-    max-width: 1080px;
+    max-width: 1032px;
     margin-left: auto;
     margin-right: auto;
 }

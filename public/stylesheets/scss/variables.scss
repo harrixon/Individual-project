@@ -80,6 +80,14 @@ $dark-lightest: rgba(0, 0, 0, 0.08);
 $border-radius: 4px;
 
 /*
+ * Section padding
+ */
+
+$section-padding-l: 64px;
+$section-padding-m: 32px;
+$section-padding-s: 12px;
+
+/*
 *
 * Color Blend Fx
 * https://github.com/heygrady/scss-blend-modes/blob/master/stylesheets/_blend-modes.scss

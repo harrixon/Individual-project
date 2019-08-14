@@ -1,0 +1,93 @@
+section.listing {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin: auto;
+
+    .card {
+        margin: 64px 24px 0 0;
+
+        // set first row no margin top
+        &:nth-child(-n+3) {
+            margin-top: 0;
+        }
+
+        // 3 cards per row
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+
+        .card-container {
+            .card-body {
+                display: grid;
+                grid-template-rows: 1fr 2fr;
+            }
+        }
+    }
+
+    // 1032px = section wrapper max-width
+    @media screen and (max-width: 1032px) {
+        max-width: 680px;
+
+        .card {
+            margin: 24px 24px 0 0;
+
+            // set first row no margin top
+            &:nth-child(-n+3) {
+                margin-top: 24px;
+            }
+
+            &:nth-child(-n+2) {
+                margin-top: 0;
+            }
+
+            // reset margin-right of 3n
+            &:nth-child(3n) {
+                margin-right: 24px;
+            }
+
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        width: 90%;
+        min-width: 328px;
+
+        .card {
+            margin: 0 auto 36px auto;
+
+            // set first row no margin top
+            &:nth-child(-n+3) {
+                margin-top: 0;
+            }
+
+            &:nth-child(-n+2) {
+                margin-top: 0;
+            }
+
+            &:nth-child(3n) {
+                margin-right: auto;
+            }
+
+            &:nth-child(2n) {
+                margin-right: auto;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .card-container {
+                .card-body {
+                    grid-template-rows: 1fr auto;
+                }
+            }
+        }
+    }
+}

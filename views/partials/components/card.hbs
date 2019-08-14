@@ -1,0 +1,24 @@
+{{!-- baseline
+Large Card 16:9
+width = 328px --}}
+
+<div class="card card-l">
+    {{!-- link to project page --}}
+    <a href="/project/{{this.link}}">
+        <div class="card-container">
+            {{!-- images and tags --}}
+            <div class="card-media-container">
+                {{!-- short darken overlay at bottom --}}
+                <div class="card-media-overlay"></div>
+                {{#inArray this.preview 0}}
+                <img class="card-media" alt="card-media" src="/images/{{this}}">
+                {{/inArray}}
+            </div>
+            {{!-- card body: title and description --}}
+            <div class="card-body">
+                <span class="card-body-title"> {{this.name}} </span>
+                <span class="card-body-content"> {{this.description}} </span>
+            </div>
+        </div>
+    </a>
+</div>
