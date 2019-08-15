@@ -1,0 +1,196 @@
+/*
+ *
+ * Selection Control
+ *
+ * Radio Button
+ *
+ * Checkbox
+ *
+ * Toggle Button
+ * 
+ * DropDown Button
+ * 
+ * Range Slider
+ * 
+ */
+
+
+
+ $form-control-default: $hi-black;
+ $form-control-selected: $hi-gold;
+ $form-control-disabled: $hi-dark-grey;
+ 
+ /* check box and radio button */
+ input[type="checkbox"] ~ label,
+ input[type="radio"] ~ label {
+   display: flex;
+   align-items: center;
+   color: $form-control-default;
+   cursor: pointer;
+ }
+ input[type="checkbox"]:checked ~ label,
+ input[type="radio"]:checked ~ label {
+   color: $form-control-selected;
+ }
+ input[type="checkbox"]:disabled ~ label,
+ input[type="radio"]:disabled ~ label {
+   color: $form-control-disabled;
+   cursor: not-allowed;
+ }
+ 
+//  /* check box */
+//  input[type="checkbox"] {
+//    position: absolute;
+//    left: -9999px;
+//    // top: -9999px;
+//    /* For mobile, it's typically better to position checkbox on top of clickable
+//         area and turn opacity to 0 instead. */
+//  }
+//  input[type="checkbox"] ~ label .label-mark::before {
+//    content: "\EE14";
+//    @include labelMark;
+//  }
+//  input[type="checkbox"]:checked ~ label .label-mark::before {
+//    content: "\EE13";
+//    @include labelMark;
+//  }
+//  input[type="checkbox"]:disabled ~ label .label-mark::before {
+//    content: "\EE14";
+//    @include labelMark;
+//  }
+ 
+//  /* radio button , same as checkbox */
+//  input[type="radio"] {
+//    position: absolute;
+//    left: -9999px;
+//  }
+//  input[type="radio"] ~ label .label-mark::before {
+//    content: "\EE19";
+//    @include labelMark;
+//  }
+//  input[type="radio"]:checked ~ label .label-mark::before {
+//    content: "\EE18";
+//    @include labelMark;
+//  }
+//  input[type="radio"]:disabled ~ label .label-mark::before {
+//    content: "\EE19";
+//    @include labelMark;
+//  }
+ 
+ label.label-large {
+   font-size: 24px;
+ }
+ 
+ /* toggles */
+ input[type="checkbox"].btn-toggle {
+   display: none;
+   
+     // add default box-sizing for this scope
+     &,
+   &:after,
+   &:before,
+     & *,
+   & *:after,
+   & *:before,
+     & + label {
+         box-sizing: border-box;
+         &::selection {
+             background: none;
+         }
+   }
+   
+   & + label {
+     outline: 0;
+         display: block;
+         position: relative;
+         cursor: pointer;
+     user-select: none;
+     
+     width: 38px;
+     height: 14px;
+ 
+         &:after,
+     &:before {
+             position: relative;
+             display: block;
+             content: "";
+       
+       top: -5px;
+       left: 40px;
+       width: 20px;
+       height: 20px;
+         }
+     
+         &:after {
+       left: -2px;
+       box-shadow: $box-shadow;
+         }
+     
+         &:before {
+             display: none;
+     }
+   }
+   &:checked + label:after {
+         left: 50%;
+   }
+   
+   // styling
+   & + label {
+     background: #f0f0f0;
+         border-radius: 2em;
+         padding: 2px;
+         transition: all .4s ease;
+         &:after {
+             border-radius: 50%;
+             background: #fff;
+             transition: all .2s ease;
+         }
+   }
+   &:checked + label {
+     background: $form-control-selected;
+   }
+ }
+ 
+ /* Dropdown */
+ .dropdown.btn {
+   // force use outline version button
+   @include btn-gold-outlined;
+   // default text style
+   .dd-default {
+ 
+   }
+   // down arrow
+//    &:after {
+//      @include labelMark;
+//      padding-right: 0;
+//      margin-left: auto;
+//      content: "\ED96";
+//    }
+ 
+   // android style pop up menu
+   & ~ .dd-list {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100vw;
+     height: 100vh;
+     background-color: $dark-enabled;
+     justify-content: center;
+     align-items: center;
+     display: none;
+     &.dd-show {
+       display: flex;
+     }
+     
+     .list {
+       max-width: 60%;
+       max-height: 80%;
+       overflow-y: scroll;
+       
+       .list-row {
+         @include rippleEffect;
+       }
+     }
+   }
+ }
+ 

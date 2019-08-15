@@ -1,0 +1,306 @@
+/*
+ *
+ *  Text Fields
+ *
+ *  There are 5 states of text field
+ *  
+ *  1. Resting : Default Resting Empty State
+ *  2. Activated : Active / Focus / Visited State, or with class name "activated"
+ *  3. Enabled : Resting && Not-empty State, or with class name "enabled"
+ *  4. Error : Error State validated by H5, or with class name "error"
+ *  5. Disabled : Disabled State, with class name "disabled"
+ *
+ *  Remark:
+ *  You need to write your own js to toggle "Enable" state since
+ *  pure CSS cannnot detect if the input field has value
+ */
+
+/*
+ * 
+ * Text Color
+ *
+ */
+
+ $text-field-default: $dark-default;
+
+ /*
+  * 
+  * Resting
+  *
+  */
+ 
+ $text-field-resting: $dark-enabled;
+ $text-field-resting-bg: blendNormal($dark-lightest, $hi-white);
+ 
+ /*
+  * 
+  * Focus / Activated
+  *
+  */
+ 
+ $text-field-focus: $hi-gold;
+ $text-field-focus-bg: blendNormal(rgba($hi-gold, 0.16), $hi-white);
+ 
+ /*
+  * 
+  * Enabled
+  *
+  */
+ 
+ $text-field-enabled: $dark-enabled;
+ $text-field-enabled-bg: $dark-lightest;
+ 
+ /*
+  * 
+  * Error
+  *
+  */
+ 
+ $text-field-error: $hi-red;
+ $text-field-error-bg: blendNormal(rgba($hi-red, 0.16), $hi-white);
+ 
+ /*
+  * 
+  * Disabled
+  *
+  */
+ 
+ $text-field-disabled: $dark-disabled;
+ $text-field-disabled-bg: blendNormal($dark-lightest, $hi-white);
+ 
+ /*
+  * 
+  * Icons
+  *
+  */
+ 
+ $text-field-icon-black: $text-field-default;
+ $text-field-icon-red: $hi-red;
+ 
+ /*
+  * 
+  * Styles - Default
+  *
+  */
+ 
+ .textfield {
+   display: grid;
+   grid-template-rows: [start]20px [input-start]1fr [helper-start]15px[end];
+ 
+   position: relative;
+ 
+   border: none;
+ 
+   background-color: transparent;
+   color: $text-field-resting;
+ 
+   .field-label {
+     @include body2;
+     grid-row-start: start;
+     grid-row-end: input-start;
+   }
+ 
+   .input-wrapper {
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-end;
+     align-items: center;
+     position: relative;
+ 
+     grid-row-start: input-start;
+     grid-row-end: helper-start;
+ 
+     textarea,
+     input {
+       @include subtitle1;
+       width: 100%;
+       height: 50px;
+       padding: 0 36px 0 16px;
+       border-radius: 4px;
+       outline: none;
+       border: 1px solid red;
+       background-color: $text-field-resting-bg;
+       border-color: $text-field-resting-bg;
+     }
+     textarea {
+       padding-top: 15px;
+       padding-bottom: 8px;
+       resize: vertical;
+     }
+ 
+     /* remove all icon first */
+     .icon {
+       display: none;
+       align-self: center;
+     }
+     /* trailing icon */
+     &:after {
+       @include labelMark;
+       content: "";
+       color: $text-field-icon-black;
+     }
+     /* trailing icon */
+     &:after,
+     /* user inject icon */
+     textarea ~ .icon,
+     input ~ .icon {
+       display: inline;
+       position: absolute;
+       padding-right: 16px;
+     }
+   }
+ 
+ 
+   .helper-text {
+     @include caption;
+     padding: 0 16px;
+ 
+     grid-row-start: helper-start;
+     grid-row-end: end;
+   }
+ }
+ 
+ /*
+  * 
+  * Styles - Enabled
+  *
+  */
+ 
+ .textfield.enabled {
+   color: $text-field-enabled;
+ 
+   .icon {
+     display: none;
+   }
+ 
+   .input-wrapper:after {
+     content: "\EBA2";
+   }
+ }
+ 
+ /*
+  * 
+  * Styles - Focus / Activated
+  * 
+  * This goes after "Enabled" since "Active" override "Enabled"
+  *
+  */
+ 
+ .textfield:focus,
+ .textfield:focus-within,
+ .textfield:visited,
+ .textfield.activated {
+   color: $text-field-focus;
+ 
+   textarea, input {
+     background-color: $text-field-focus-bg;
+     border-color: $text-field-focus-bg;
+   }
+ 
+   .icon {
+     display: none;
+   }
+ 
+   // &.input-wrapper:before {
+   //   content: "\EC10";
+   // }
+   .input-wrapper:after {
+     content: "\EAA6";
+   }
+ }
+ 
+ /*
+  * 
+  * Styles - Error
+  *
+  */
+ 
+ .textfield.error {
+   color: $text-field-error;
+ 
+   textarea, input {
+     background-color: $text-field-error-bg;
+     border-color: $text-field-error-bg;
+   }
+ 
+   .icon {
+     display: none;
+   }
+ 
+   .input-wrapper:after {
+     content: "\ED94";
+     color: $text-field-error;
+   }
+ }
+ 
+ /*
+  * 
+  * Styles - Disabled
+  *
+  */
+ 
+ .textfield.disabled {
+   color: $text-field-disabled;
+   
+   textarea, input {
+     background-color: $text-field-disabled-bg;
+     border-color: $text-field-disabled-bg;
+     cursor: not-allowed;
+     &::placeholder {
+       color: $text-field-disabled;
+     }
+   }
+ }
+ 
+ /* 
+  *
+  * Styles - Outlined
+  *
+  */
+ 
+ .textfield.outlined {
+   /* resting */
+   color: $text-field-resting;
+ 
+   textarea, input {
+     background-color: transparent;
+     border: 1px solid $text-field-resting;
+   }
+ 
+   /* focus / activated */
+   &:active,
+   &:focus,
+   &:focus-within,
+   &:visited,
+   &.activated {
+     color: $text-field-focus;
+ 
+     textarea, input {
+       border: 1px solid $text-field-focus;
+       color: $text-field-default;
+     }
+   }
+ 
+   /* error */
+   &.error {
+     color: $text-field-error;
+ 
+     textarea, input {
+       border: 1px solid $text-field-error;
+       color: $text-field-default;
+     }
+   }
+ 
+   /* disabled */
+   &.disabled {
+     color: $text-field-disabled;
+ 
+     textarea, input {
+       border: 1px solid $text-field-disabled;
+       &::placeholder {
+         color: $text-field-disabled;
+       }
+     }
+   }
+ }
+ 

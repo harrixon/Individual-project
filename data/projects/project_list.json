@@ -4,54 +4,47 @@
         "link": "hiinc",
         "name": "hi Inc. Company Website",
         "description": "Corporate B2B Website with 3rd party API integration",
-        "description_long": "bla bla bla",
-        "dev_role": "In charge",
-        "collab": "Designer, Marketing",
+        "description_long": [
+            "This B2B website was built from scratch for Tinklabs re-branding, in collaboration with in-house design team and marketing team.",
+            "The project was completed within 3 weeks and went live on Jan 1, 2019."
+        ],
         "preview": [
             {
                 "id": "1",
-                "file": "project_hiinc_screen_1.png"
+                "file": "project_hiinc_preview_1.png"
             },
             {
                 "id": "2",
-                "file": "project_hiinc_screen_2.png"
+                "file": "project_hiinc_preview_2.png"
             },
             {
                 "id": "3",
-                "file": "project_hiinc_screen_3.png"
+                "file": "project_hiinc_preview_3.png"
             }
         ],
         "details": [
             {
                 "key": "Role",
-                "value": "Dev, In charge"
+                "value": "Development"
             },
             {
                 "key": "Collaboration",
-                "value": "Design, Market, CS team"
+                "value": "Design, Marketing, CS Team"
             },
             {
                 "key": "Link",
                 "value": "https://www.hiinc.com"
             },
             {
-                "key": "Role",
-                "value": "Dev, In charge"
-            },
-            {
-                "key": "Collaboration",
-                "value": "Design, Market, CS team"
-            },
-            {
-                "key": "Link",
-                "value": "https://www.hiinc.com"
+                "key": "Stack",
+                "value": "Node.JS, SASS, handlebars, i18n"
             }
         ],
         "images": {
-            "major": "project_baseline_screen_major.png",
+            "major": "project_hiinc_major.png",
             "minor": [
-                "project_baseline_screen_minor_1.png",
-                "project_baseline_screen_minor_2.png"
+                "project_hiinc_minor_1.png",
+                "project_hiinc_minor_2.png"
             ]
         }
     },
@@ -59,47 +52,48 @@
         "id": "2",
         "link": "StyleBaseline",
         "name": "Style Baseline",
-        "description": "CSS style library for internal use",
-        "description_long": "bla bla bla",
-        "dev_role": "In charge",
-        "collab": "UX designer",
+        "description": "CSS style library for company's internal use",
+        "description_long": [
+            "The Handy style baseline was developed to unify visual on every service on Tinklabs' flagship product Handy, in collaboration with UX designer.",
+            "Storybook was chosen for documentation as it allows user to easily try out different settings and use cases."
+        ],
         "preview": [
             {
                 "id": "1",
-                "file": "project_baseline_screen_1.png"
+                "file": "project_baseline_preview_1.png"
             },
             {
                 "id": "2",
-                "file": "project_baseline_screen_2.png"
+                "file": "project_baseline_preview_2.png"
             },
             {
                 "id": "3",
-                "file": "project_baseline_screen_3.png"
+                "file": "project_baseline_preview_3.png"
             },
             {
                 "id": "4",
-                "file": "project_baseline_screen_4.png"
+                "file": "project_baseline_preview_4.png"
             }
         ],
         "details": [
             {
                 "key": "Role",
-                "value": "Dev, In charge"
+                "value": "Development"
             },
             {
                 "key": "Collaboration",
-                "value": "Design, Market, CS team"
+                "value": "UX Designer"
             },
             {
-                "key": "Link",
-                "value": "https://www.hiinc.com"
+                "key": "Stack",
+                "value": "SASS, Gulp, Storybook"
             }
         ],
         "images": {
-            "major": "project_baseline_screen_major.png",
+            "major": "project_baseline_major.png",
             "minor": [
-                "project_baseline_screen_minor_1.png",
-                "project_baseline_screen_minor_2.png"
+                "project_baseline_minor_1.png",
+                "project_baseline_minor_2.png"
             ]
         }
     },
@@ -107,43 +101,44 @@
         "id": "3",
         "link": "OTAPlatform",
         "name": "Online Travel Agency Platform",
-        "description": "An OTA platform integrated with existing services and databases.",
-        "description_long": "bla bla bla",
-        "dev_role": "Part of dev team",
-        "collab": "UX, UI designers",
+        "description": "An OTA platform integrated with existing company's services and database.",
+        "description_long": [
+            "This OTA platform is one of the major project after Tinklabs' re-branding, integrating with existing services and provides customer with a complete travel experience, from planning to finishing the trip.",
+            "I was part of scrum team and mainly focuses on executing designs and functions of landing page, profile page, and a few common components."
+        ],
         "preview": [
             {
                 "id": "1",
-                "file": "project_hidotcom_screen_1.png"
+                "file": "project_hidotcom_preview_1.png"
             },
             {
                 "id": "2",
-                "file": "project_hidotcom_screen_2.png"
+                "file": "project_hidotcom_preview_2.png"
             },
             {
                 "id": "3",
-                "file": "project_hidotcom_screen_3.png"
+                "file": "project_hidotcom_preview_3.png"
             }
         ],
         "details": [
             {
                 "key": "Role",
-                "value": "Dev, In charge"
+                "value": "Part of Scrum Team"
             },
             {
-                "key": "Collaboration",
-                "value": "Design, Market, CS team"
+                "key": "Focus",
+                "value": "UI/UX Execution"
             },
             {
-                "key": "Link",
-                "value": "https://www.hiinc.com"
+                "key": "Stack",
+                "value": "Less CSS, pug(jade), Node.JS"
             }
         ],
         "images": {
-            "major": "project_baseline_screen_major.png",
+            "major": "project_hidotcom_major.png",
             "minor": [
-                "project_baseline_screen_minor_1.png",
-                "project_baseline_screen_minor_2.png"
+                "project_hidotcom_minor_1.png",
+                "project_hidotcom_minor_2.png"
             ]
         }
     },
@@ -152,42 +147,43 @@
         "link": "HotelPortal",
         "name": "Hotel Portal",
         "description": "Portal Website for both internal and external usage",
-        "description_long": "bla bla bla",
-        "dev_role": "Part of dev team",
-        "collab": "UI designers",
+        "description_long": [
+            "Hotel portal is the go-to place for TinkLabs' various product related services and configurations.",
+            "I was part of scrum team and mostly focuses on maintainence and improvment."
+        ],
         "preview": [
             {
                 "id": "1",
-                "file": "project_hotelportal_screen_1.png"
+                "file": "project_hotelportal_preview_1.png"
             },
             {
                 "id": "2",
-                "file": "project_hotelportal_screen_2.png"
+                "file": "project_hotelportal_preview_2.png"
             },
             {
                 "id": "3",
-                "file": "project_hotelportal_screen_3.png"
+                "file": "project_hotelportal_preview_3.png"
             }
         ],
         "details": [
             {
                 "key": "Role",
-                "value": "Dev, In charge"
+                "value": "Part of Scrum Team"
             },
             {
                 "key": "Collaboration",
-                "value": "Design, Market, CS team"
+                "value": "Design, Data Team, and other Stakeholders"
             },
             {
-                "key": "Link",
-                "value": "https://www.hiinc.com"
+                "key": "Stack",
+                "value": "React, SASS"
             }
         ],
         "images": {
-            "major": "project_baseline_screen_major.png",
+            "major": "project_hotelportal_major.png",
             "minor": [
-                "project_baseline_screen_minor_1.png",
-                "project_baseline_screen_minor_2.png"
+                "project_hotelportal_minor_1.png",
+                "project_hotelportal_minor_2.png"
             ]
         }
     },
@@ -196,70 +192,69 @@
         "link": "SSOFE",
         "name": "SSO Login Page",
         "description": "A single login page for multiple products across different platforms",
-        "description_long": "bla bla bla",
-        "dev_role": "In charge",
-        "collab": "Android team for compatibility",
+        "description_long": [
+            "This webpage is created to unify and control visual of login page for various Tinklabs' products and services, providing dynamic contents basing on entry point.",
+            "The page also requires compatibilty with different mobile OS, especially various versions of company's custom ROM."
+        ],
         "preview": [
             {
                 "id": "1",
-                "file": "project_ssofe_screen_1.png"
+                "file": "project_ssofe_preview_1.png"
             }
         ],
         "details": [
             {
                 "key": "Role",
-                "value": "Dev, In charge"
+                "value": "Development"
             },
             {
                 "key": "Collaboration",
-                "value": "Design, Market, CS team"
+                "value": "UX Designer, Andriod Team"
             },
             {
-                "key": "Link",
-                "value": "https://www.hiinc.com"
+                "key": "Stack",
+                "value": "React, SASS, i18n"
             }
         ],
         "images": {
-            "major": "project_baseline_screen_major.png",
-            "minor": [
-                "project_baseline_screen_minor_1.png",
-                "project_baseline_screen_minor_2.png"
-            ]
+            "major": "project_ssofe_major.png",
+            "minor": []
         }
     },
     {
         "id": "6",
         "link": "DealingRoom",
         "name": "Dealing Room",
-        "description": "A system for pub management fusing with stock market experience",
-        "description_long": "bla bla bla",
-        "dev_role": "Front end (React)",
-        "collab": "A team of 4",
+        "description": "A pub management system fusing with stock market experience for customers",
+        "description_long": [
+            "This project converted static bar menu into digital menu with fluctuation price, according to principle of free market.",
+            "Integrated streamlined ordering, payment system, and a simple POS system."
+        ],
         "preview": [
             {
                 "id": "1",
-                "file": "project_dealingroom_screen_1.png"
+                "file": "project_dealingroom_preview_1.png"
             }
         ],
         "details": [
             {
                 "key": "Role",
-                "value": "Dev, In charge"
+                "value": "Development, Team of 4"
             },
             {
-                "key": "Collaboration",
-                "value": "Design, Market, CS team"
+                "key": "Focus",
+                "value": "UX/UI execution, Project Design"
             },
             {
-                "key": "Link",
-                "value": "https://www.hiinc.com"
+                "key": "Stack",
+                "value": "React, SASS, Node.JS, Typescript, Socket.IO, AWS"
             }
         ],
         "images": {
-            "major": "project_baseline_screen_major.png",
+            "major": "project_dealingroom_major.png",
             "minor": [
-                "project_baseline_screen_minor_1.png",
-                "project_baseline_screen_minor_2.png"
+                "project_dealingroom_minor_1.png",
+                "project_dealingroom_minor_2.png"
             ]
         }
     },
@@ -268,35 +263,33 @@
         "link": "HandyHomePOC",
         "name": "Handy Home POC",
         "description": "An experimental landing page for flagship product Handy phone",
-        "description_long": "bla bla bla",
-        "dev_role": "In charge",
-        "collab": "UX designers, AD team, Data team",
+        "description_long": [
+            "This project aims to improve converison rate by designing both UI and UX of TinkLabs' flagship product Handy phone's landing page.",
+            "Specific groups of user from different backgrounds were targeted and provided with custom contents. Their actions were tracked but data collected was not statistically significant. However, according to feedback, the visual change was welcomed."
+        ],
         "preview": [
             {
                 "id": "1",
-                "file": "project_nhppoc_screen_1.png"
+                "file": "project_nhppoc_preview_1.png"
             }
         ],
         "details": [
             {
                 "key": "Role",
-                "value": "Dev, In charge"
+                "value": "Development"
             },
             {
                 "key": "Collaboration",
-                "value": "Design, Market, CS team"
+                "value": "UI, UX Design, Marketing Team"
             },
             {
-                "key": "Link",
-                "value": "https://www.hiinc.com"
+                "key": "Stack",
+                "value": "React, SASS, Mixpanel"
             }
         ],
         "images": {
-            "major": "project_baseline_screen_major.png",
-            "minor": [
-                "project_baseline_screen_minor_1.png",
-                "project_baseline_screen_minor_2.png"
-            ]
+            "major": "project_nhppoc_major.png",
+            "minor": []
         }
     }
 ]

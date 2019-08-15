@@ -36,16 +36,16 @@ $subtitle1-size-s: 16px;
     letter-spacing: normal;
 
     font-size: $subtitle1-size-l;
-    line-height: $subtitle1-size-l;
+    line-height: $subtitle1-size-l * 1.2;
 
     @media screen and (max-width: 1032px) {
         font-size: $subtitle1-size-m;
-        line-height: $subtitle1-size-m;
+        line-height: $subtitle1-size-m * 1.2;
     }
 
     @media screen and (max-width: 767px) {
         font-size: $subtitle1-size-s;
-        line-height: $subtitle1-size-s;
+        line-height: $subtitle1-size-s * 1.2;
     }
 }
 
@@ -62,21 +62,21 @@ $subtitle2-size-s: 18px;
     letter-spacing: normal;
 
     font-size: $subtitle2-size-l;
-    line-height: $subtitle2-size-l;
+    line-height: $subtitle2-size-l * 1.2;
 
     @media screen and (max-width: 1032px) {
         font-size: $subtitle2-size-m;
-        line-height: $subtitle2-size-m;
+        line-height: $subtitle2-size-m * 1.2;
     }
 
     @media screen and (max-width: 767px) {
         font-size: $subtitle2-size-s;
-        line-height: $subtitle2-size-s;
+        line-height: $subtitle2-size-s * 1.2;
     }
 }
 
 $body1-size-l: 20px;
-$body1-size-m: 14px;
+$body1-size-m: 18px;
 $body1-size-s: 14px;
 
 @mixin body1 {
@@ -87,23 +87,23 @@ $body1-size-s: 14px;
     letter-spacing: normal;
 
     font-size: $body1-size-l;
-    line-height: $body1-size-l;
+    line-height: $body1-size-l * 1.2;
 
     @media screen and (max-width: 1032px) {
         font-size: $body1-size-m;
-        line-height: $body1-size-m;
+        line-height: $body1-size-m * 1.2;
     }
 
     @media screen and (max-width: 767px) {
         font-size: $body1-size-s;
-        line-height: $body1-size-s;
+        line-height: $body1-size-s * 1.2;
     }
 }
 
 // not tested
-$body2-size-l: 14px;
+$body2-size-l: 16px;
 $body2-size-m: 14px;
-$body2-size-s: 14px;
+$body2-size-s: 12px;
 
 @mixin body2 {
     font-family: "Futura PT";
@@ -113,16 +113,16 @@ $body2-size-s: 14px;
     letter-spacing: normal;
 
     font-size: $body2-size-l;
-    line-height: $body2-size-l;
+    line-height: $body2-size-l * 1.2;
 
     @media screen and (max-width: 1032px) {
         font-size: $body2-size-m;
-        line-height: $body2-size-m;
+        line-height: $body2-size-m * 1.2;
     }
 
     @media screen and (max-width: 767px) {
         font-size: $body2-size-s;
-        line-height: $body2-size-s;
+        line-height: $body2-size-s * 1.2;
     }
 }
 
@@ -139,16 +139,16 @@ $caption-size-s: 12px;
     letter-spacing: 0.2;
 
     font-size: $caption-size-l;
-    line-height: $caption-size-l;
+    line-height: $caption-size-l * 1.2;
 
     @media screen and (max-width: 1032px) {
         font-size: $caption-size-m;
-        line-height: $caption-size-m;
+        line-height: $caption-size-m * 1.2;
     }
 
     @media screen and (max-width: 767px) {
         font-size: $caption-size-s;
-        line-height: $caption-size-s;
+        line-height: $caption-size-s * 1.2;
     }
 }
 

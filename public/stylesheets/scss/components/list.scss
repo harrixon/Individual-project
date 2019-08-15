@@ -1,0 +1,119 @@
+/*
+ *
+ * List
+ *
+ *
+ *
+ *
+ */
+
+ @mixin list-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    min-height: 52px;
+    padding: 0 16px;
+    background-color: $hi-white;
+
+    &:last-child {
+        .list-content {
+            border-bottom: none;
+        }
+    }
+
+    .list-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        width: 100%;
+        padding: 8px 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+        .list-thumbnail {
+            margin-right: 16px;
+
+            &.icon {
+                font-size: 20px;
+            }
+        }
+
+        .list-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            padding: 8px 0;
+
+            .list-text-primary {
+                @include subtitle1;
+            }
+
+            .list-text-secondary {
+                @include body2;
+                color: $dark-enabled;
+
+                max-height: 2.86em;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+            }
+
+            .list-text-overline {
+                @include caption;
+                color: $dark-enabled;
+            }
+        }
+
+        .list-meta {
+            @include caption;
+            color: $dark-enabled;
+            padding-left: 16px;
+            margin-left: auto;
+
+            &.icon,
+            &.form-group {
+                color: $dark-default;
+                font-size: 20px;
+            }
+
+            &.form-group {
+                margin-right: -8px;
+            }
+        }
+
+        // in multiline list only thumbnail-icon & meta-caption are moved to corner
+        &.multiline {
+            .list-thumbnail.icon {
+                margin-top: 8px;
+                align-self: flex-start;
+            }
+
+            .list-meta:not(.icon):not(.form-group) {
+                margin-top: 8px;
+                align-self: flex-start;
+            }
+        }
+    }
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    // prevent text selection on long tap
+    user-select: none;
+
+    transition: all .5s ease-in-out;
+
+    .list-row {
+        @include list-row;
+    }
+}

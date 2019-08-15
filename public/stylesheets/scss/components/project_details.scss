@@ -9,13 +9,13 @@
         margin: 16px 0;
 
         .key {
-            @include body1;
+            @include body2;
             display: inline-block;
             width: 120px;
         }
 
         .value {
-            @include body1;
+            @include body2;
             display: inline-block;
 
             &.link {
@@ -34,5 +34,9 @@
 
     @media screen and (max-width: 767px) {
         grid-auto-flow: unset;
+
+        .row {
+            margin: 4px 0;
+        }
     }
 }

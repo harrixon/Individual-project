@@ -1,16 +1,16 @@
-section.project {
+section#project {
     .about {
-        max-width: 620px;
+        max-width: 80%;
         margin: 48px auto 78px $section-padding-l;
 
         .title {
             @include headline;
         }
 
-        .subtitle {
-            @include subtitle1;
-            color: $dark-enabled;
-        }
+        // .subtitle {
+        //     @include subtitle1;
+        //     color: $dark-enabled;
+        // }
 
         .content {
             @include body1;
@@ -53,6 +53,10 @@ section.project {
 
     @media screen and (max-width: 1032px) {
         width: 80%;
+
+        .about {
+            max-width: 100%;
+        }
 
         .screen-shots {
             width: 100%;
@@ -99,10 +103,15 @@ section.project {
         }
 
         .details {
+            margin-top: 32px;
             margin-bottom: 32px;
 
             .wrapper {
                 margin-left: $section-padding-s;
+
+                .title {
+                    margin: 16px 0;
+                }
             }
         }
     }

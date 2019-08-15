@@ -1,4 +1,4 @@
-section.listing {
+section#listing {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -9,6 +9,11 @@ section.listing {
 
     .card {
         margin: 64px 24px 0 0;
+        transition: transform 0.2s ease-out;
+
+        &:hover {
+            transform: scale(1.05);
+        }
 
         // set first row no margin top
         &:nth-child(-n+3) {
@@ -23,7 +28,7 @@ section.listing {
         .card-container {
             .card-body {
                 display: grid;
-                grid-template-rows: 1fr 2fr;
+                grid-template-rows: 1fr 1.5fr;
             }
         }
     }
@@ -58,6 +63,7 @@ section.listing {
     @media screen and (max-width: 767px) {
         width: 90%;
         min-width: 328px;
+        margin-bottom: 16px;
 
         .card {
             margin: 0 auto 36px auto;

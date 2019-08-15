@@ -1,26 +1,84 @@
-<div class="navbar">
+<div
+    class="navbar"
+    id="navbar"
+>
     <div class="nav-wrapper">
-        <img src="/images/logo.png" alt="logo">
+        <a href="/">
+            <img
+                src="/images/logo.png"
+                alt="logo"
+            >
+        </a>
         <div class="nav-items">
-            <a class="nav-item" href="#">Portfolios</a>
-            <a class="nav-item" href="#">Contacts</a>
+            <a
+                class="nav-item"
+                href="/#listing"
+            >
+                Portfolios
+            </a>
+            <a
+                class="nav-item"
+                href="#footer"
+            >
+                Contacts
+            </a>
         </div>
     </div>
     <div class="m-nav-wrapper">
         <div class="top-bar">
             <div class="top-bar-left">
-                <a href="#" class="">
-                    <img class="top-bar-icon" src="/images/icon-arrow-left.svg"/>
+                <a
+                    href="/"
+                    class=""
+                >
+                    <img
+                        class="top-bar-icon"
+                        src="/images/icon-arrow-left.svg"
+                    />
                 </a>
             </div>
             <div class="top-bar-body">
-                <h3 class="top-bar-title"> title </h3>
+                <h3 class="top-bar-title">
+                    {{#render page "landing"}}
+                        Portfolios
+                    {{/render}}
+
+                    {{#render page "project"}}
+                        {{projectData.name}}
+                    {{/render}}
+                </h3>
             </div>
             <div class="top-bar-right">
                 <div class="top-bar-menu">
-                    <a href="#" class="">
-                        <img class="icon" src="/images/icon-menu.svg"/>
-                    </a>
+                    <img
+                        class="icon"
+                        src="/images/icon-menu.svg"
+                    />
+                    <div
+                        class="m-menu inactive"
+                        id="m-nav-menu"
+                    >
+                        <ul class="list">
+                            <li class="list-row">
+                                <div class="list-content">
+                                    <span class="list-text">
+                                        <a href="/#listing">
+                                            Portfolios
+                                        </a>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="list-row">
+                                <div class="list-content">
+                                    <span class="list-text">
+                                        <a href="#footer">
+                                            Contacts
+                                        </a>
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

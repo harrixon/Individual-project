@@ -4,7 +4,7 @@
 {{!-- 3. minor screen shot --}}
 {{!-- 4. project details section --}}
 
-<section class="project">
+<section id="project">
     {{!-- mobile screen shot --}}
     <div class="m-screen-shots">
         <img
@@ -18,7 +18,9 @@
     <div class="about">
         <h1 class="title"> {{projectData.name}} </h1>
         {{!-- <h3 class="subtitle"> {{projectData.description}} </h3> --}}
-        <p class="content"> {{projectData.description_long}} </p>
+        {{#for projectData.description_long}}
+            <p class="content"> {{this}} </p>
+        {{/for}}
     </div>
     <hr />
 
