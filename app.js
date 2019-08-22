@@ -17,13 +17,13 @@ const logger = require('morgan');
  * 
  */
 
-// if (app.get('env') === 'development') {
-// 	// js not bundled on local, serve app.js instead
-// 	const expressBrowserify = require('express-browserify');
-// 	app.get('/javascripts/bundle-min.js', expressBrowserify(['./public/javascripts/app.js'], {
-// 		watch: true,
-// 	}));
-// }
+if (app.get('env') === 'development') {
+	// js not bundled on local, serve app.js instead
+	const expressBrowserify = require('express-browserify');
+	app.get('/javascripts/bundle-min.js', expressBrowserify(['./public/javascripts/app.js'], {
+		watch: true,
+	}));
+}
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -51,15 +51,15 @@ app.set('view engine', 'hbs');
  * SASS
  * 
  */
-// const sassMiddleware = require('node-sass-middleware');
-// app.use(sassMiddleware({
-// 	src: path.join(__dirname, 'public'),
-// 	dest: path.join(__dirname, 'public'),
-// 	indentedSyntax: false,
-// 	sourceMap: true,
-// 	outputStyle: 'compressed',
-// 	debug: true,
-// }));
+const sassMiddleware = require('node-sass-middleware');
+app.use(sassMiddleware({
+	src: path.join(__dirname, 'public'),
+	dest: path.join(__dirname, 'public'),
+	indentedSyntax: false,
+	sourceMap: true,
+	outputStyle: 'compressed',
+	debug: true,
+}));
 
 /**
  *
