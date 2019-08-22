@@ -1,5 +1,1 @@
-/**
- * bundle js, sass/css
- * minify photo?
- * 
- */
+// switch to webpack

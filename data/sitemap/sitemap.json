@@ -3,5 +3,40 @@
         "url": "/",
         "priority": 1,
         "lastmodfile": "views/index.hbs"
+    },
+    {
+        "url": "/project/hiinc",
+        "priority": 0.8,
+        "lastmodfile": "views/index.hbs"
+    },
+    {
+        "url": "/project/StyleBaseline",
+        "priority": 0.8,
+        "lastmodfile": "views/index.hbs"
+    },
+    {
+        "url": "/project/OTAPlatform",
+        "priority": 0.5,
+        "lastmodfile": "views/index.hbs"
+    },
+    {
+        "url": "/project/HotelPortal",
+        "priority": 0.8,
+        "lastmodfile": "views/index.hbs"
+    },
+    {
+        "url": "/project/SSOFE",
+        "priority": 0.5,
+        "lastmodfile": "views/index.hbs"
+    },
+    {
+        "url": "/project/DealingRoom",
+        "priority": 0.8,
+        "lastmodfile": "views/index.hbs"
+    },
+    {
+        "url": "/project/HandyHomePOC",
+        "priority": 0.8,
+        "lastmodfile": "views/index.hbs"
     }
 ]

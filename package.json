@@ -8,7 +8,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "server": "node app.js",
+    "build": "npx webpack -c webpack.config.js",
+    "start": "npm run build && npm run server"
   },
   "repository": {
     "type": "git",
@@ -32,17 +34,24 @@
     "hbs-utils": "0.0.4",
     "lodash": "^4.17.15",
     "morgan": "^1.9.1",
-    "node-sass-middleware": "^0.11.0"
+    "node-sass": "^4.12.0",
+    "node-sass-middleware": "^0.11.0",
+    "postcss-middleware": "^1.1.4",
+    "sass": "^1.22.7",
+    "sitemap": "^3.2.2",
+    "style-loader": "^1.0.0",
+    "uglifyjs-webpack-plugin": "^2.2.0"
   },
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-clean": "^0.4.0",
-    "gulp-minify": "^3.1.0",
-    "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-sort": "^2.0.0",
-    "node-sass": "^4.12.0",
-    "sass": "^1.22.7",
-    "sitemap": "^3.2.2"
+    "autoprefixer": "^9.6.1",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.3.1",
+    "terser-webpack-plugin": "^1.4.1",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7"
   }
 }

@@ -5,8 +5,6 @@
  */
 const express = require('express');
 const app = express();
-// const cors = require('cors');
-// app.use(cors({ "origin": "*", }));
 const bodyParser = require('body-parser');
 const path = require('path');
 const logger = require('morgan');
@@ -19,17 +17,19 @@ const logger = require('morgan');
  * 
  */
 
-if (app.get('env') === 'development') {
-	// js not bundled on local, serve app.js instead
-	const expressBrowserify = require('express-browserify');
-	app.get('/javascripts/bundle-min.js', expressBrowserify(['./public/javascripts/app.js'], {
-		watch: true,
-	}));
-}
+// if (app.get('env') === 'development') {
+// 	// js not bundled on local, serve app.js instead
+// 	const expressBrowserify = require('express-browserify');
+// 	app.get('/javascripts/bundle-min.js', expressBrowserify(['./public/javascripts/app.js'], {
+// 		watch: true,
+// 	}));
+// }
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({
+	extended: false
+}));
 
 /**
  * 
@@ -49,18 +49,17 @@ app.set('view engine', 'hbs');
 /**
  *
  * SASS
- * also see README
  * 
  */
-const sassMiddleware = require('node-sass-middleware');
-app.use(sassMiddleware({
-	src: path.join(__dirname, 'public'),
-	dest: path.join(__dirname, 'public'),
-	indentedSyntax: false,
-	sourceMap: true,
-	outputStyle: 'compressed',
-	debug: true,
-}));
+// const sassMiddleware = require('node-sass-middleware');
+// app.use(sassMiddleware({
+// 	src: path.join(__dirname, 'public'),
+// 	dest: path.join(__dirname, 'public'),
+// 	indentedSyntax: false,
+// 	sourceMap: true,
+// 	outputStyle: 'compressed',
+// 	debug: true,
+// }));
 
 /**
  *

@@ -4,6 +4,9 @@
 ./public/generic.html
 ./public/landing.html
 
+./public/stylesheets/*.otf
+./public/stylesheets/main.js
+
 node_modules
 
 *.DS_Store
